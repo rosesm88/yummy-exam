@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ----------- Nav Bar------------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 350px;
+    z-index: 99999;
+}
+
+nav .sideBar {
+    background-color: #000;
+    
+}
+
+nav .logo {
+    width: 50px;
+    height: auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: rgb(192, 233, 235);
+    cursor: pointer;
+}
+
+nav .openSideBar,
+nav .closeSideBar,
+.meal {
+    cursor: pointer;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: #f9f6f6ca;
+    transition: 0.5s;
+}
+
+.meal:hover .layer {
+    top: 0;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.close-open {
+    color: #000;
+}
+
+
+
+/* ----------LOADING PAGE----------- */
+.loader {
+    transform: rotateZ(45deg);
+    perspective: 1000px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+}
+
+.loader:before,
+.loader:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+    transform: rotateX(70deg);
+    animation: 2s spin linear infinite;
+    -webkit-animation: 2s spin linear infinite;
+}
+
+.loader:after {
+    transform: rotateY(70deg);
+    animation-delay: .5s;
+}
+
+
+
+/* ----------- Contacts Section------------- */
+
+input {
+    outline: none;
+    border-bottom: 1px solid #fff;
+    padding-inline: 10px;
+    padding-block: 6px;
+    background-color: transparent;
+    transition: 0.3s;
+    
+}
+
+input:focus {
+    /* box-shadow: 0 0 15px #ddd; */
+
+    box-shadow: none !important;
+
+}
+
+.area {
+    cursor: pointer;
+}
+
+.ingredients {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+
